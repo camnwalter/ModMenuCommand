@@ -1,31 +1,13 @@
-# Example Client Fabric Mod with Kotlin
+# ModMenu Command
 
-## Setup
+![ModMenu Command](https://i.imgur.com/h7WjbKS.png)
 
-### Set project SDK to Java 17+
-```
-1) Ctrl + Shift + Alt + S
-2) Set SDK version to Java 17 or above
-3) Apply
-```
+Ever wanted to quickly open a mod's config screen? Now you can with ModMenu Command!
 
-### Set Gradle JVM version to Java 17+
-```
-1) Ctrl + Alt + S
-2) Build, Execution and Deployment -> Build Tools -> Gradle
-3) Set Gradle JVM version to Java 17 or above
-4) Apply
-```
+This mod adds the /modmenu command to easily open each of your mods' ModMenu screen.
 
-### Set run configuration to Java 8
-```
-1) Ctrl + Shift + A
-2) Type "Edit configurations"
-3) Open it
-4) Change Build and run to Java 17, and the classpath to examplemod.main
-5) Apply
-```
+ModMenu Command requires [Fabric](https://fabricmc.net/use/installer/), [Fabric API](https://www.modrinth.com/mod/fabric-api),
+[Fabric Language Kotlin](https://www.modrinth.com/mod/fabric-language-kotlin), and, of course,
+[ModMenu](https://www.modrinth.com/mod/modmenu).
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+ModMenu Command is not affiliated with ModMenu.

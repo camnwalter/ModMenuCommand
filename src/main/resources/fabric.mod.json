@@ -1,32 +1,37 @@
 {
     "schemaVersion": 1,
-    "id": "examplemod",
+    "id": "modmenucommand",
     "version": "${version}",
-    "name": "ExampleMod",
-    "description": "Example client mod for Fabric using Kotlin.",
+    "name": "ModMenu Command",
+    "description": "Adds a /modmenu command to open each mod's ModMenu config screen. Not affiliated with ModMenu.",
     "authors": [
         "Squagward"
     ],
     "contact": {
-        "homepage": "https://github.com/camnwalter/FabricExampleMod",
-        "sources": "https://github.com/camnwalter/FabricExampleMod",
-        "issues": "https://github.com/camnwalter/FabricExampleMod/issues"
+        "homepage": "https://github.com/camnwalter/ModMenuCommand",
+        "sources": "https://github.com/camnwalter/ModMenuCommand",
+        "issues": "https://github.com/camnwalter/ModMenuCommand/issues"
     },
     "license": "MIT",
-    "icon": "assets/examplemod/icon.png",
+    "icon": "assets/modmenucommand/icon.png",
     "environment": "client",
     "entrypoints": {
         "client": [{
             "adapter": "kotlin",
-            "value": "com.example.ExampleMod"
+            "value": "com.squagward.modmenucommand.ModMenuCommand"
         }]
     },
-    "mixins": ["examplemod.mixins.json"],
+    "custom": {
+        "modmenu": {
+            "parent": "modmenu"
+        }
+    },
     "depends": {
         "fabricloader": ">=0.14.21",
         "minecraft": "~1.20.1",
         "java": ">=17",
         "fabric-api": "*",
-        "fabric-language-kotlin": ">=${fabric_kotlin_version}"
+        "fabric-language-kotlin": ">=${fabric_kotlin_version}",
+        "modmenu": ">=${mod_menu_version}"
     }
 }
